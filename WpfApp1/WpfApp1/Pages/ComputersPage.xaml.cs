@@ -23,6 +23,12 @@ namespace WpfApp1.Pages
         public ComputersPage()
         {
             InitializeComponent();
+            DataGridComputersPage.ItemsSource = App.DB.Computers.ToList();
+        }
+
+        private void AddDataGridButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new NewComputerPage());
         }
     }
 }

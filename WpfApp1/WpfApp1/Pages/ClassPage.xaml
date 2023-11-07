@@ -9,7 +9,20 @@
       Title="ClassPage">
 
     <Grid>
-        <DataGrid x:Name="DataGridClassPage"/>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        
+        <DataGrid x:Name="DataGridClassPage" Grid.Column="0"/>
+        <StackPanel Grid.Column="1">
+            <Button Content="Добавить данные" 
+                    FontSize="30px"
+                    Name="AddDataGridButton"
+                    Click="AddDataGridButton_Click"/>
+        </StackPanel>
+        
 
     </Grid>
 </Page>

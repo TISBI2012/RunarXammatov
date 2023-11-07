@@ -16,20 +16,18 @@ using System.Windows.Shapes;
 namespace WpfApp1.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для ClassPage.xaml
+    /// Логика взаимодействия для NewClassPage.xaml
     /// </summary>
-    public partial class ClassPage : Page
+    public partial class NewClassPage : Page
     {
-        public ClassPage()
+        public NewClassPage()
         {
             InitializeComponent();
-            DataGridClassPage.ItemsSource = App.DB.@class.ToList();
         }
 
-
-        private void AddDataGridButton_Click(object sender, RoutedEventArgs e)
+        private void BAddClass_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new NewClassPage());
+            
         }
     }
 }

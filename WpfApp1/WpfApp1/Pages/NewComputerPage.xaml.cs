@@ -12,24 +12,24 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfApp1.Model;
 
 namespace WpfApp1.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для ClassPage.xaml
+    /// Логика взаимодействия для NewComputerPage.xaml
     /// </summary>
-    public partial class ClassPage : Page
+    public partial class NewComputerPage : Page
     {
-        public ClassPage()
+        public NewComputerPage()
         {
             InitializeComponent();
-            DataGridClassPage.ItemsSource = App.DB.@class.ToList();
         }
 
-
-        private void AddDataGridButton_Click(object sender, RoutedEventArgs e)
+        private void BAddComputer_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new NewClassPage());
+            App.DB.Computers testXammatovEntities = new App.DB(testXammatovEntities);
+
         }
     }
 }

@@ -9,6 +9,18 @@
       Title="ComputersPage">
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel Grid.Column="1">
+            <Button Content="Добавить данные" 
+                    FontSize="30px"
+                    Name="AddDataGridButton"
+                    Click="AddDataGridButton_Click"/>
+        </StackPanel>
+        
         <DataGrid Name="DataGridComputersPage"/>
     </Grid>
 </Page>

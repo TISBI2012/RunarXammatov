@@ -41,7 +41,15 @@ namespace WpfApp1.Pages {
     public partial class ComputersPage : System.Windows.Controls.Page, System.Windows.Markup.IComponentConnector {
         
         
-        #line 12 "..\..\..\Pages\ComputersPage.xaml"
+        #line 20 "..\..\..\Pages\ComputersPage.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button AddDataGridButton;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 24 "..\..\..\Pages\ComputersPage.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.DataGrid DataGridComputersPage;
         
@@ -79,6 +87,15 @@ namespace WpfApp1.Pages {
             switch (connectionId)
             {
             case 1:
+            this.AddDataGridButton = ((System.Windows.Controls.Button)(target));
+            
+            #line 21 "..\..\..\Pages\ComputersPage.xaml"
+            this.AddDataGridButton.Click += new System.Windows.RoutedEventHandler(this.AddDataGridButton_Click);
+            
+            #line default
+            #line hidden
+            return;
+            case 2:
             this.DataGridComputersPage = ((System.Windows.Controls.DataGrid)(target));
             return;
             }
