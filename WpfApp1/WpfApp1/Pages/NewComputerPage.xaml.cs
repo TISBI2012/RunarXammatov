@@ -37,8 +37,6 @@ namespace WpfApp1.Pages
             App.DB.Computers.Add(computer);
             App.DB.SaveChanges();
             NavigationService.Navigate(new ComputersPage());
-
-
         }
 
         private void BBack_Click(object sender, RoutedEventArgs e)

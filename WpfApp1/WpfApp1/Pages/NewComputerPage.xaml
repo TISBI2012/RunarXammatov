@@ -8,26 +8,36 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="NewComputerPage">
 
-    <Grid>
+    <Grid Background="#3AA9AD">
         <StackPanel HorizontalAlignment="Center" Width="500">
-            <TextBlock Text="ip"/>
+            <TextBlock Text="ip"
+                       Foreground="#fff"
+                       FontSize="16px"/>
             <TextBox Text="{Binding ip}" Margin="0,10" Name="Bip"/>
-            <TextBlock Text="class"/>
+            <TextBlock Text="class"
+                       Foreground="#fff"
+                       FontSize="16px"
+                       />
             <TextBox Text="{Binding class}" Margin="0,10" Name="Bclass"/>
-            <TextBlock Text="status"/>
+            <TextBlock Text="status"
+                       Foreground="#fff"
+                       FontSize="16px"/>
             <CheckBox  Margin ="0,10" Name="Bstatus"></CheckBox>
-            <TextBlock Text="id"/>
+            <TextBlock Text="id"
+                       Foreground="#fff"
+                       FontSize="16px"/>
             <TextBox Text="{Binding id}" Margin="0,10" Name="Bid"/>
             
             <Button Content="Add"
                     Margin="0,10" 
                     Name="BAddComputer"
                     Click="BAddComputer_Click"
-                    Background= "#2D4A53"/>
+      
+                    Style="{StaticResource button}"/>
             <Button Content="Back"
                     Name="BBack"
                     Click="BBack_Click"
-                    Background= "#2D4A53"/>
+                    Style="{StaticResource button}"/>
         </StackPanel>
     </Grid>
 </Page>

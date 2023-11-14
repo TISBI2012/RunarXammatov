@@ -19,17 +19,19 @@
         <DataGrid x:Name="DataGridClassPage" Grid.Column="0" Grid.Row="1"/>
 
         <StackPanel Grid.Column="1">
-            <Button Content="Добавить данные" 
+            <Button Content="Добавить " 
                     FontSize="30px"
-                    Background= "#2D4A53"
                     Name="AddDataGridButton"
-                    Click="AddDataGridButton_Click"/>
+                    Click="AddDataGridButton_Click"
+                    Style="{StaticResource button}"
+                    Foreground="#ffff"/>
             <Button Margin="0,20"
-                    Background= "#2D4A53"
-                    Content="Удалить данные" 
+                    Content="Удалить " 
                     FontSize="30px"
                     Name="BDeleteGrid"
-                    Click="BDeleteGrid_Click"/>
+                    Click="BDeleteGrid_Click"
+                    Style="{StaticResource button}"
+                    Foreground="#ffff"/>
         </StackPanel>
         
 

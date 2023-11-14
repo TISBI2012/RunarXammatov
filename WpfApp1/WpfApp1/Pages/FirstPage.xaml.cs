@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace WpfApp1.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Main.xaml
+    /// Логика взаимодействия для FirstPage.xaml
     /// </summary>
-    public partial class Main : Page
+    public partial class FirstPage : Page
     {
-        public Main()
+        public FirstPage()
         {
             InitializeComponent();
         }

@@ -15,6 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WpfApp1;
 using WpfApp1.Model;
+using System.Drawing;
 
 namespace WpfApp1.Pages
 {
@@ -33,16 +34,21 @@ namespace WpfApp1.Pages
         {
             var user = App.DB.users.FirstOrDefault(x => x.login == UsernameTextBox.Text);
 
-            if(user == null || user.password != PasswordTextBox.Text)
+            if(user == null || user.password != PasswordTextBox.Password)
             {
                 MessageBox.Show("Данные для входа неверны");
                 return;
             }
 
-            App.LoginUser = user;
-            NavigationService.Navigate(new Main());
+
+            NavigationService.Navigate(new FirstPage());
 
         
+        }
+
+        private void BRegistation_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new RegistrationPage());
         }
     }
 }

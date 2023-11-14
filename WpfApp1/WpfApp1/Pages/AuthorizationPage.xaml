@@ -8,47 +8,99 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="AuthorizationPage">
 
-    <Grid Background="#132E35">
+    <Grid Background="#253745">
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
-            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
 
-        <StackPanel>
-            <TextBlock Text="Авторизация"
+
+        <Border>
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#3AA9AD" Offset="0"/>
+                    <GradientStop Color="#3AADA1" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <Grid>
+                <Canvas>
+                    <Polygon Points="0,20 230,140 0,270" Fill="#4EB1B6"/>
+                    <Polygon Points="100,400 200,370 180,470" Fill="#4EB1B6"/>
+                    <Ellipse Margin="250 430 0 0" Width="40" Height="40" Fill="#4EB1B6"/>
+                    <Ellipse Margin="50 400 0 0" Width="40" Height="40" Fill="#4EB1B6"/>
+
+                </Canvas>
+            </Grid>
+            
+        </Border>
+        
+        <Border Background="#ffff" Grid.Column="1" CornerRadius="0 10 10 0">
+
+            <StackPanel Grid.Column="1" >
+                <TextBlock Text="Sign in"
                        FontSize="30px"
-                       Margin="20,20,0,0"/>
+                       Grid.Row="1"
+                       HorizontalAlignment="Center"
+                       Style="{StaticResource titleText}"
+                       Foreground="#3ab19b"
+                           Margin="0,40,0,0"/>
+                
+                <StackPanel Margin="0,70,0,0">
+                    <TextBlock Text="Login" 
+                               Style="{StaticResource normalText}" 
+                               FontSize="20px" 
+                               Foreground="#808080" 
+                               HorizontalAlignment="Center"/>
+                    
+                    <TextBox Margin="10,0,10,0"
+                             FontSize="30px"
+                             Name="UsernameTextBox"
+                             Background="white"
+                             BorderBrush="#808080"
+                             BorderThickness="1" />
+                    
+                    <TextBlock Text="Password" 
+                               Style="{StaticResource normalText}" 
+                               Margin="0,0,0,0" FontSize="20px" 
+                               Foreground="#808080" 
+                               HorizontalAlignment="Center"/>
+                    
+                    <PasswordBox Margin="10,0"
+                                 FontSize="30px"
+                                 Name="PasswordTextBox"   
+                                 BorderThickness="1"
+                                 BorderBrush="#808080"/>
+                    
+                   
+                    <Button Content="Войти" 
+                            Name="LoginButton"
+                            Click="LoginButton_Click"
+                            Foreground="#808080" 
+                            FontSize="20px" 
+                            Style="{StaticResource button}"
+                            Margin="0,10"/>
+                    
+                </StackPanel>
+                
+            </StackPanel>
+
+
+
+        </Border>
+
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock Text="Sign Up" Style="{StaticResource titleText}"/>
+            <TextBlock Text="enter your personal inf and create new account" Style="{StaticResource normalText}" Opacity="0.8" Margin="20,30"/>
+            <Button Content="Sing Up" Style="{StaticResource button}" 
+                    Name="BRegistation"
+                    Click="BRegistation_Click"/>
         </StackPanel>
         
-        <StackPanel Grid.Row="1" Grid.Column="1">
-            <TextBlock Text="Логин"
-                       FontSize="30px"
-                       Grid.Row="1"
-                       HorizontalAlignment="Center"/>
-            <TextBox FontSize="30px"
-                     Name="UsernameTextBox"
-                     Background="#2D4A53"/>
-            <TextBlock Text="Пороль"
-                       FontSize="30px"
-                       Grid.Row="1"
-                       HorizontalAlignment="Center"/>
-            <TextBox FontSize="30px"
-                     Name="PasswordTextBox"
-                     Background="#2D4A53"/>
-            <Button Name="LoginButton"
-                    Content="Войти" 
-                    HorizontalAlignment="Center"
-                    FontSize="30px"
-                    Click="LoginButton_Click"
-                    Background="#2D4A53"
-                    Margin="0,20,0,0"/>
+        
+        <StackPanel Grid.Column="1" Margin="0,4">
+            
             <Frame Name="MainFrame"/>
         </StackPanel>
     </Grid>

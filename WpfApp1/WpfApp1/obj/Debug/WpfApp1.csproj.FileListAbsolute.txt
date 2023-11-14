@@ -22,8 +22,6 @@ Y:\Хамматов Рунар\WPF\практика бд\WpfApp1\WpfApp1\bin\Deb
 Y:\Хамматов Рунар\WPF\практика бд\WpfApp1\WpfApp1\bin\Debug\ru\EntityFramework.resources.dll
 Y:\Хамматов Рунар\WPF\практика бд\WpfApp1\WpfApp1\obj\Debug\WpfApp1_Content.g.cs
 Y:\Хамматов Рунар\WPF\практика бд\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CopyComplete
-Y:\Хамматов Рунар\WPF\практика бд\WpfApp1\WpfApp1\obj\Debug\Pages\Main.g.cs
-Y:\Хамматов Рунар\WPF\практика бд\WpfApp1\WpfApp1\obj\Debug\Pages\Main.baml
 Y:\Хамматов Рунар\WPF\практика бд\WpfApp1\WpfApp1\obj\Debug\Pages\ClassPage.g.cs
 Y:\Хамматов Рунар\WPF\практика бд\WpfApp1\WpfApp1\obj\Debug\Pages\ComputersPage.g.cs
 Y:\Хамматов Рунар\WPF\практика бд\WpfApp1\WpfApp1\obj\Debug\Pages\ClassPage.baml
@@ -32,3 +30,8 @@ Y:\Хамматов Рунар\WPF\практика бд\WpfApp1\WpfApp1\obj\Deb
 Y:\Хамматов Рунар\WPF\практика бд\WpfApp1\WpfApp1\obj\Debug\Pages\NewClassPage.baml
 Y:\Хамматов Рунар\WPF\практика бд\WpfApp1\WpfApp1\obj\Debug\Pages\NewComputerPage.g.cs
 Y:\Хамматов Рунар\WPF\практика бд\WpfApp1\WpfApp1\obj\Debug\Pages\NewComputerPage.baml
+Y:\Хамматов Рунар\WPF\практика бд\WpfApp1\WpfApp1\obj\Debug\App.baml
+Y:\Хамматов Рунар\WPF\практика бд\WpfApp1\WpfApp1\obj\Debug\Pages\RegistrationPage.g.cs
+Y:\Хамматов Рунар\WPF\практика бд\WpfApp1\WpfApp1\obj\Debug\Pages\RegistrationPage.baml
+Y:\Хамматов Рунар\WPF\практика бд\WpfApp1\WpfApp1\obj\Debug\Pages\FirstPage.g.cs
+Y:\Хамматов Рунар\WPF\практика бд\WpfApp1\WpfApp1\obj\Debug\Pages\FirstPage.baml
