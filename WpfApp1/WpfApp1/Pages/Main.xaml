@@ -15,10 +15,6 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
         
         <StackPanel>
             <TextBlock Text="Добро пожаловать" 
@@ -37,7 +33,6 @@
             
         </StackPanel>
         <Frame Grid.Column="1"
-               Grid.RowSpan="2"
                Name="MainFrame"/>
     </Grid>
 </Page>

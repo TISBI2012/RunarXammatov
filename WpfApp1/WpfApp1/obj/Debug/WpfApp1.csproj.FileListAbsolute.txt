@@ -30,3 +30,5 @@ Y:\Хамматов Рунар\WPF\практика бд\WpfApp1\WpfApp1\obj\Deb
 Y:\Хамматов Рунар\WPF\практика бд\WpfApp1\WpfApp1\obj\Debug\Pages\ComputersPage.baml
 Y:\Хамматов Рунар\WPF\практика бд\WpfApp1\WpfApp1\obj\Debug\Pages\NewClassPage.g.cs
 Y:\Хамматов Рунар\WPF\практика бд\WpfApp1\WpfApp1\obj\Debug\Pages\NewClassPage.baml
+Y:\Хамматов Рунар\WPF\практика бд\WpfApp1\WpfApp1\obj\Debug\Pages\NewComputerPage.g.cs
+Y:\Хамматов Рунар\WPF\практика бд\WpfApp1\WpfApp1\obj\Debug\Pages\NewComputerPage.baml

@@ -9,10 +9,15 @@
       Title="NewClassPage">
 
     <Grid>
-        <StackPanel Grid.Column="1" Margin="20px">
-            <TextBox Text="id" Margin="0,0" Name="Bid"/>
-            <TextBox Text="placces" Margin="0,10" Name="Bplacces"/>
+        <StackPanel Grid.Column="1" Margin="200,20px">
+            <TextBlock Text="id"/>
+            <TextBox Text="{Binding id}" Margin="0,10" Name="Bid"/>
+            <TextBlock Text="placces"/>
+            <TextBox Text="{Binding placces}" Margin="0,10" Name="Bplacces"/>
             <Button Content="Add" Margin="0,10" Name="BAddClass" Click="BAddClass_Click"/>
+            <Button Content="Back"
+                    Name="BBack"
+                    Click="BBack_Click"/>
         </StackPanel>
     </Grid>
 </Page>

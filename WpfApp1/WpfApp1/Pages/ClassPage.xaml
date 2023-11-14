@@ -14,13 +14,22 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="auto"/>
         </Grid.ColumnDefinitions>
+       
         
-        <DataGrid x:Name="DataGridClassPage" Grid.Column="0"/>
+        <DataGrid x:Name="DataGridClassPage" Grid.Column="0" Grid.Row="1"/>
+
         <StackPanel Grid.Column="1">
             <Button Content="Добавить данные" 
                     FontSize="30px"
+                    Background= "#2D4A53"
                     Name="AddDataGridButton"
                     Click="AddDataGridButton_Click"/>
+            <Button Margin="0,20"
+                    Background= "#2D4A53"
+                    Content="Удалить данные" 
+                    FontSize="30px"
+                    Name="BDeleteGrid"
+                    Click="BDeleteGrid_Click"/>
         </StackPanel>
         
 

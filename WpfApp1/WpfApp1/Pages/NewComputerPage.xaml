@@ -9,13 +9,25 @@
       Title="NewComputerPage">
 
     <Grid>
-        <StackPanel Grid.Column="1" Margin="20px">
-            <TextBox Text="ip" Margin="0,0" Name="Bip"/>
-            <TextBox Text="class" Margin="0,10" Name="Bclass"/>
-            <TextBox Text="status" Margin="0,0" Name="Bstatus"/>
-            <TextBox Text="id" Margin="0,10" Name="Bid"/>
+        <StackPanel HorizontalAlignment="Center" Width="500">
+            <TextBlock Text="ip"/>
+            <TextBox Text="{Binding ip}" Margin="0,10" Name="Bip"/>
+            <TextBlock Text="class"/>
+            <TextBox Text="{Binding class}" Margin="0,10" Name="Bclass"/>
+            <TextBlock Text="status"/>
+            <CheckBox  Margin ="0,10" Name="Bstatus"></CheckBox>
+            <TextBlock Text="id"/>
+            <TextBox Text="{Binding id}" Margin="0,10" Name="Bid"/>
             
-            <Button Content="Add" Margin="0,10" Name="BAddComputer" Click="BAddComputer_Click"/>
+            <Button Content="Add"
+                    Margin="0,10" 
+                    Name="BAddComputer"
+                    Click="BAddComputer_Click"
+                    Background= "#2D4A53"/>
+            <Button Content="Back"
+                    Name="BBack"
+                    Click="BBack_Click"
+                    Background= "#2D4A53"/>
         </StackPanel>
     </Grid>
 </Page>

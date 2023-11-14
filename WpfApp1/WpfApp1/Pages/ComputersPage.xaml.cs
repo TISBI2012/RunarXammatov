@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfApp1.Pages;
+using WpfApp1.Model;
 
 namespace WpfApp1.Pages
 {
@@ -29,6 +31,22 @@ namespace WpfApp1.Pages
         private void AddDataGridButton_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new NewComputerPage());
+        }
+
+        private void DeleteDataGridButton_Click(object sender, RoutedEventArgs e)
+        {
+            var selClient = DataGridComputersPage.SelectedItem as Computers;
+            if(selClient != null)
+            {
+                App.DB.Computers.Remove(selClient);
+                App.DB.SaveChanges();
+                DataGridComputersPage.ItemsSource = App.DB.Computers.ToList();
+            }
+            else {
+          
+                MessageBox.Show("Ничего не выбрано");
+                
+            }
         }
     }
 }

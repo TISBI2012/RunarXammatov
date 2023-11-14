@@ -21,6 +21,7 @@ namespace WpfApp1.Pages
     /// </summary>
     public partial class NewComputerPage : Page
     {
+       
         public NewComputerPage()
         {
             InitializeComponent();
@@ -28,8 +29,21 @@ namespace WpfApp1.Pages
 
         private void BAddComputer_Click(object sender, RoutedEventArgs e)
         {
-            App.DB.Computers testXammatovEntities = new App.DB(testXammatovEntities);
+            var computer = new Computers();
+            computer.ip = Bip.Text;
+            computer.@class = Bclass.Text;
+            computer.id = int.Parse(Bid.Text);
+            computer.status = Bstatus.IsChecked;
+            App.DB.Computers.Add(computer);
+            App.DB.SaveChanges();
+            NavigationService.Navigate(new ComputersPage());
 
+
+        }
+
+        private void BBack_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new ClassPage());
         }
     }
 }
