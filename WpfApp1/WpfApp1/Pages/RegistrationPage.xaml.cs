@@ -31,6 +31,9 @@ namespace WpfApp1.Pages
             var password = RegPasswordTB.Password;
 
             try { 
+
+                /*Валидация тут должна быть*/
+
                 using (var context = new testXammatovEntities())
                 {
                     var user = new users
@@ -40,6 +43,7 @@ namespace WpfApp1.Pages
                     };
                     context.users.Add(user);
                     MessageBox.Show("Вы успешно вошли");
+     
                 }
                 NavigationService.Navigate(new FirstPage());
             }

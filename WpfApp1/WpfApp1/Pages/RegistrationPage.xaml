@@ -34,14 +34,19 @@
                 <CheckBox  HorizontalAlignment="Center" 
                            Foreground="#fff" 
                            Content="I accept the agreement"/>
-                <Button Content="Ok" Margin="250,10"
-                        Name="RegButton"
+                
+                <Button Content="Sing" Style="{StaticResource button}" 
+                        Margin="0,20,0,0"
+                        Name="BRegistation"
                         Click="RegButton_Click"/>
                 
             </StackPanel>
-            <Button Content="У вас уже есть аккаунт" Margin="600, 50, 0, 10" Width="150"
-                        Name="Login"
-                        Click="LoginButton_Click"/>
+            <Button Content="У вас уже есть аккаунт" 
+                    Margin="600, 50, 0, 10" 
+                    Width="150"
+                    Style="{StaticResource button}"
+                    Name="Login"
+                    Click="LoginButton_Click"/>
 
         </StackPanel>
         
